@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="./css/sendOtp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>OTP Verification</h1>
+      <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter your email"
+        required
+      />
+      <input type="text" id="otpInput" placeholder="Enter OTP" disabled />
+      <button id="generateOTPButton">Generate OTP</button>
+      <button id="validateOTPButton" class="disabledBtn" disabled>
+        Validate OTP
+      </button>
+      <!-- <div id="otpContainer" style="display: none">
+        <p>Your OTP:</p>
+        <div id="otpDisplay"></div>
+      </div> -->
+    </div>
+    <script src="./js/sendOtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  </body>
+</html>
